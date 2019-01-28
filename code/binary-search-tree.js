@@ -4,7 +4,7 @@ module.exports = function(bst) {
 
   recurse(bst);
 
-  function recurse(node) {
+  function recurse(node, min, max) {
     if (stack.includes(node.value)) {
       result = false;
     }
@@ -12,14 +12,20 @@ module.exports = function(bst) {
     if (node.right && node.value >= node.right.value) {
       result = false;
     }
+    if (min && node.value < min) {
+      result = false;
+    }
+    if (max && node.value > max) {
+      result = false;
+    }
     if (node.left && node.value <= node.left.value) {
       result = false;
     }
     if (node.left) {
-      recurse(node.left);
+      recurse(node.left, min, node.value);
     }
     if (node.right) {
-      recurse(node.right);
+      recurse(node.right, node.value, max);
     }
   }
   return result;
