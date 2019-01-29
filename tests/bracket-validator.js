@@ -1,5 +1,5 @@
 var expect = require("chai").expect;
-var bracketValidator = require("../code/bracketValidator2");
+var bracketValidator = require("../code/bracket-validator2");
 
 describe("Bracket Validator", function() {
   it("should return false when the number of openning and closing bracket are not equal", function() {
