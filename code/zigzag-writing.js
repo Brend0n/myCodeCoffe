@@ -6,5 +6,5 @@ module.exports = function(text, rowsNumber) {
   // A P L S I I G
   // Y   I   R
 
-  return "";
+  return "wrong";
 };
