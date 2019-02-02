@@ -6,5 +6,16 @@ module.exports = function(text, rowsNumber) {
   // A P L S I I G
   // Y   I   R
 
+  let result = "";
+  let rows = [];
+  let textChar = text.split("");
+
+  for (let i = 0; i < rowsNumber; i++) {
+    rows.push("");
+  }
+  for (let i = 0; i < textChar.length; null) {
+    for (let x = 0; x < rowsNumber; x++) {}
+  }
+
   return "wrong";
 };
