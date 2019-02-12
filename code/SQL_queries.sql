@@ -3,6 +3,7 @@
 --  Try to do query that return the last person who can enter the elevator without exceeding the limit
 
 -- The answer must be ==>  'Thomas Jefferson'
+-- Build the table first
 
 CREATE TABLE line (
     id int not null PRIMARY KEY,
