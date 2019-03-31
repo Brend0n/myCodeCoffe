@@ -1,7 +1,7 @@
 var assert = require("assert");
 var zigzagWriting = require("../code/zigzag-writing");
 
-describe.only("prime number", function() {
+describe("Zigzag writing", function() {
   it("should return the correct string with 3 rows", function() {
     assert.equal(zigzagWriting("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
   });
