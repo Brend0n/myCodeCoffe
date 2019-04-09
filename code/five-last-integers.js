@@ -1,5 +1,26 @@
 module.exports = function(input) {
-  return "nothing";
+  var myArray = [];
+  var result = "";
+
+  for (var i = 0; i < input.length; i++) {
+    var tempIndex = myArray.indexOf(input[i]);
+    if (tempIndex === -1) {
+      if (myArray.length >= 5) {
+        myArray.pop();
+      }
+      myArray.unshift(input[i]);
+    } else {
+      myArray.splice(tempIndex, 1);
+      myArray.unshift(input[i]);
+    }
+    var resultString = "";
+    for (var num of myArray) {
+      resultString += num + " ";
+    }
+    // console.log("XXX", resultString);
+    result += resultString.trim(" ") + "\n";
+  }
+  return result.trim("\n");
 };
 
 // Problem Statement

@@ -10,7 +10,7 @@ describe.only("Five Last Integers", function() {
   });
   it("should return the correct result", function() {
     const myArr = [1, 1, 1, 1, 2, 1, 2, 3, 1, 2];
-    const expected = "1\n1\n1\n1\n2 1\n1 2\n2 1\n3 2 1\n1 3 2\n2 1 3\n";
+    const expected = "1\n1\n1\n1\n2 1\n1 2\n2 1\n3 2 1\n1 3 2\n2 1 3";
     assert.equal(fiveLastInteger(myArr), expected);
   });
 });
